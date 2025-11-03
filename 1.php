@@ -10,10 +10,12 @@ $citiesArray = explode(",", $city); //Crear el array $capitals con la estructura
 $capitals = [];
 
 foreach ($citiesArray as $cityName) {
-    $capitals[] = ['city' => trim($cityName)];
+    $capitals[] ='city' = $cityName;
 } //Así que hacemos un bucle foreach sobre $citiesArray
 //trim() elimina espacios sobrantes (por ejemplo, antes de “Cairo”).
 var_dump($capitals);
+
+
 
 
 ?>
